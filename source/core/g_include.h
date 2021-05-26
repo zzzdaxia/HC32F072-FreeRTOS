@@ -17,13 +17,19 @@
 
 
 
-/******************************************************************************
- * Include files
- ******************************************************************************/
+/*********Include dev files*********/
 #include "hc32f072.h"
 #include "dev_gpio.h"
 #include "dev_clk.h"
 
+/*********Include FreeRTOS *********/
+#include "FreeRTOS.h"
+#include "task.h"
+
+/*********Include app files*********/
+
+#include "app_Led.h"
+#include "app_Task.h"
 
 
 

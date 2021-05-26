@@ -234,7 +234,7 @@ typedef enum en_adc_trig_sel
     AdcMskTrigPC11       =  1u<<28,        /*!<选择PC11中断源，自动触发ADC采样*/
     AdcMskTrigPA15       =  1u<<29,        /*!<选择PA15中断源，自动触发ADC采样*/
     AdcMskTrigPB15       =  1u<<30,        /*!<选择PB15中断源，自动触发ADC采样*/
-    AdcMskTrigPC15       =  1u<<31,        /*!<选择PC15中断源，自动触发ADC采样*/
+    AdcMskTrigPC15       =  (int)(1u<<31),        /*!<选择PC15中断源，自动触发ADC采样*/
 }en_adc_trig_sel_t;
 
 /**

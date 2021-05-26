@@ -15,7 +15,7 @@
 
 
 
-void App_LedInit(void)
+void Dev_LedInit(void)
 {
     stc_gpio_cfg_t stcGpioCfg;
     

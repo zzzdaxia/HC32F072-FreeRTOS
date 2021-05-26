@@ -152,10 +152,12 @@ void HardFault_Handler(void)
  **
  ** \retval
  ******************************************************************************/
+/*  由FreeRTOS 提供xPortSysTickHandler
 void SysTick_Handler(void)
 {
    SysTick_IRQHandler();
 }
+*/
 
 /**
  *******************************************************************************

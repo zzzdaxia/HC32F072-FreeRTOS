@@ -17,7 +17,7 @@
 #include "gpio.h"
 
 
-void App_LedInit(void);
+void Dev_LedInit(void);
 
 
 
