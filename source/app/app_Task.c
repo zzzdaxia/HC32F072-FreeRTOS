@@ -31,13 +31,13 @@ int FreeRTOS_TaskCreate(void)
 {
 	BaseType_t xReturn = pdPASS;
 	
-	/* 创建x心跳灯任务 */
-	xReturn = xTaskCreate((TaskFunction_t )Led_Task,  /* 任务入口函数 */
-                        (const char*    )"LedTask",/* 任务名字 */
-                        (uint16_t       )64,  /* 任务栈大小 */
-                        (void*          )NULL,/* 任务入口函数参数 */
-                        (UBaseType_t    )3, /* 任务的优先级 */
-                        (TaskHandle_t*  )&AppLedTask_handle);/* 任务控制块指针 */
+	//创建心跳灯任务
+	xReturn = xTaskCreate((TaskFunction_t )Led_Task,  //任务入口函数
+                        (const char*    )"LedTask",//任务名字
+                        (uint16_t       )64,  //任务栈大小
+                        (void*          )NULL,//任务入口函数参数
+                        (UBaseType_t    )3, //任务的优先级
+                        (TaskHandle_t*  )&AppLedTask_handle);//任务控制块指针
 
    if(pdPASS != xReturn)
    {
