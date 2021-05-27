@@ -65,6 +65,7 @@ FreeRTOS的裁剪主要依靠FreeRTOSConfig.h中的宏定义去完成，需要�
 1. 再去FreeRTOS官网下载常规版本的源码，在demo目录下找到对应内核目录下的demo(可能是其它MCU，不要紧)拷贝一个FreeRTOSConfig.h文件到本地source\FreeRTOS\include目录内
 2. 我提供里一个带注释版本的FreeRTOSConfig.h文件，复制到本地source\FreeRTOS\include目录  
 内容如下：  
+```c  
 
     #ifndef FREERTOS_CONFIG_H
     #define FREERTOS_CONFIG_H
@@ -121,6 +122,7 @@ FreeRTOS的裁剪主要依靠FreeRTOSConfig.h中的宏定义去完成，需要�
     #define xPortSysTickHandler SysTick_Handler
     
     #endif /* FREERTOS_CONFIG_H */
+```
 
 3. 为了方便修改 在 Project栏中 选中FreeRTOS/config，右击->Add Existing File to Group ... .添加source\FreeRTO\include目录下的FreeRTOSConfig.h 
 4. 为了将应用层代码和系统层关联在一起，需要引用一下对方的头文件  
