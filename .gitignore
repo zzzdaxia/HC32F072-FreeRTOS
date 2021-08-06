@@ -1,0 +1,12 @@
+#以#开头代表注释行
+
+# target          //忽略这个target目录
+# angular.json    //忽略这个angular.json文件
+# log/*           //忽略log下的所有文件
+# css/*.css       //忽略css目录下的.css文件
+
+SourceInsight.si4project
+Objects/*
+!HC32F072/Objects/*.hex
+!HC32F072/Objects/*.bin
+.DS_Store
